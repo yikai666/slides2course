@@ -1,0 +1,23 @@
+# 分镜表。一个 shot 只讲一件事。
+# 字段说明见 references/video-handoff.md
+- id: {EP}-S001
+  unit: U1
+  narration_ref: script.md#L10-L18
+  duration: 45          # 秒
+  visual: formula       # formula | plot | diagram | code | text | mixed
+  content:
+    formula: "R_X(τ)=E[X(t)X(t+τ)]"
+    highlight: ["E[...]", "τ"]
+  caption: "自相关函数，衡量同一个过程隔 τ 秒后还像不像自己"
+  pause_after: 0        # 秒，仅检查点/转场使用
+
+- id: {EP}-S002
+  unit: U1
+  narration_ref: script.md#L20-L26
+  duration: 30
+  visual: plot
+  content:
+    plot: "两条功率相同但变化快慢不同的样本函数"
+    highlight: ["curve_slow", "curve_fast"]
+  caption: "功率一样，听起来完全不同"
+  pause_after: 3
