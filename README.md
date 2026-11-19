@@ -1,6 +1,8 @@
-# 课程视频生产线 / course-video-pipeline
+# slides2course · 课件到课程视频
 
 把一个学期的课件，做成一套课程视频。不是"把 PPT 念一遍"，是让一个**先修已经忘光的人**真的能听懂、能做对。
+
+九阶段流水线，两道独立评审：AI 扮演刚毕业的高中生闭卷试读讲稿，成片后再试看一遍，不过闸不定稿。
 
 这是一个 Agent Skill，适用于任何能读 `SKILL.md` 的 agent（OpenCode、Claude Code、Codex 等）。
 
@@ -63,8 +65,8 @@ S9  定稿 ──────────► 版本锁 + 哈希 + 章节目录
 ## 安装
 
 ```bash
-git clone https://github.com/<your-name>/course-video-pipeline.git \
-  ~/.config/opencode/skills/course-video-pipeline
+git clone https://github.com/yikai666/slides2course.git \
+  ~/.config/opencode/skills/slides2course
 ```
 
 其他客户端放到对应的 skills 目录即可（Claude Code 是 `~/.claude/skills/`，Codex 是 `~/.codex/skills/`）。
@@ -109,7 +111,7 @@ python <skill-dir>/scripts/gate.py . --episode EP01 --stage S6
 ## 目录
 
 ```
-course-video-pipeline/
+slides2course/
 ├── SKILL.md                      # 主文件：范围、铁律、九阶段
 ├── references/
 │   ├── pipeline-contract.md      # 每阶段的产物、字段、通过条件、回退
